@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flip-card{
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+        
+        }
+        .main-container{
+            position: relative;
+            width: 250px;
+            height: 320px;
+            
+        }
+        .thecard{
+            position: absolute;
+            width:100%;
+            height: 100%;
+            transform-style:preserve-3d ;
+            transition: all 0.5s linear;
+            
+            
+        }
+        .thecard:hover{
+            transform: rotateY(180deg);
+        }
+        .thefront{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            
+            
+            
+        }
+        img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .theback{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+            text-align: center;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <div class="flip-card">
+        <div class="main-container">
+
+            <div class="thecard">
+            <div class="thefront">
+                    <img src="./milk shakes.webp" alt="">
+                </div>
+                <div class="theback">
+                    <img src="./cake.webp" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="main-container">
+
+            <div class="thecard">
+            <div class="thefront">
+                    <img src="./milk shakes.webp" alt="">
+                </div>
+                <div class="theback">
+                    <img src="./cake.webp" alt="">
+                </div>
+        </div>
+        
+    </div>
+    <div class="main-container">
+
+        <div class="thecard">
+        <div class="thefront">
+                <img src="./milk shakes.webp" alt="">
+            </div>
+            <div class="theback">
+                <img src="./cake.webp" alt="">
+            </div>
+    </div>
+    </div>
+    <div class="main-container">
+
+        <div class="thecard">
+        <div class="thefront">
+                <img src="./milk shakes.webp" alt="">
+            </div>
+            <div class="theback">
+                <img src="./cake.webp" alt="">
+            </div>
+    </div>
+    
+
+    </div>
+      
+    <div class="main-container">
+
+        <div class="thecard">
+        <div class="thefront">
+                <img src="./milk shakes.webp" alt="">
+            </div>
+            <div class="theback">
+                <img src="./cake.webp" alt="">
+            </div>
+    </div>
+
+
+
+    <div class="main-container">
+
+        <div class="thecard">
+        <div class="thefront">
+                <img src="./milk shakes.webp" alt="">
+            </div>
+            <div class="theback">
+                <img src="./cake.webp" alt="">
+            </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+    
+   
+       
+</body>
+</html>
